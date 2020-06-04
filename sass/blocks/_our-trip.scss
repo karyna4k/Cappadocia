@@ -1,0 +1,21 @@
+.our-trip {
+    &__slider {
+        width: 50%;
+        .slick-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 5;
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+            outline: none;
+        }
+        .slick-prev {
+            left: 0;
+        }
+        .slick-next {
+            right: 0;
+        }
+    }
+}
