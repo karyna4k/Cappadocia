@@ -1,4 +1,7 @@
 .fairy-tale {
+    &__title span {
+        margin-left: 185px;
+    }
     &__slider {
         width: 50%;
         .slick-btn {

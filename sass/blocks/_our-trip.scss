@@ -1,6 +1,10 @@
 .our-trip {
+    &__title span {
+        margin-left: 245px;
+    }
     &__slider {
         width: 50%;
+        margin-left: auto;
         .slick-btn {
             position: absolute;
             top: 50%;
@@ -17,5 +21,47 @@
         .slick-next {
             right: 0;
         }
+    }
+    &__inner {
+        position: relative;
+    }
+    &__content {
+        width: 50%;
+        padding-right: 55px;
+    }
+    &__container {
+        max-width: 1230px;
+        padding: 0 30px;
+        margin: 0 auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    &__body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+        height: 100%;
+    }
+    &__list {
+        margin: 5px 0;
+        font-size: 24px;
+        line-height: 28px;
+        li {
+            &:first-child {
+                margin-bottom: 20px;
+                font-family: 'RobotoCondensed-Regular';
+            }
+        }
+    }
+    &__btn {
+        font-size: 24px;
+        line-height: 28px;
+        font-family: 'Roboto Condensed-Light';
+        padding: 11px 53px;
+        border: 1px solid #E2AB3F;
     }
 }
