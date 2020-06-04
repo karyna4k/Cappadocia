@@ -32,7 +32,8 @@ body {
 }
 
 .page-section {
-    margin: 200px 0;
+    margin: 200px auto;
+    max-width: 1920px;
 }
 
 @import 'blocks/header';
