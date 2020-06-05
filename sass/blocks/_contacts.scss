@@ -1,0 +1,69 @@
+.contacts {
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__content {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    &__date,
+    &__price {
+        font-family: 'Balqis';
+        font-size: 96px;
+        line-height: 100px;
+        color: #E2AB3F;
+        span {
+            display: block;
+            margin-top: -10px;
+            margin-left: 205px;
+            font-family: 'RobotoCondensed-LightItalic';
+            font-size: 24px;
+            line-height: 28px;
+            color: #000000;
+        }
+    }
+    &__price {
+        margin-left: 120px;
+    }
+    &__date {
+        margin-bottom: 20px;
+    }
+    &__form {
+        max-width: 383px;
+        margin: 0 auto;
+    }
+    &__form-title {
+        margin-bottom: 50px;
+        font-size: 24px;
+        line-height: 28px;
+        font-family: 'RobotoCondensed-Regular';
+    }
+    &__form-input {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0 31px;
+        height: 50px;
+        width: 100%;
+        border: 1px solid #E2AB3F;
+        font-size: 18px;
+        line-height: 21px;
+        font-family: 'Roboto Condensed-Light';
+        &::placeholder {
+            color: #000000;
+        }
+    }
+    &__form-btn {
+        background: transparent;
+        border: 1px solid #E2AB3F;
+        font-family: 'Roboto Condensed-Light';
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+        text-transform: uppercase;
+        padding: 11px 45px;
+        cursor: pointer;
+    }
+}
