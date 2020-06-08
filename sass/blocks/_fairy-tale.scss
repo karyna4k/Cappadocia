@@ -1,9 +1,18 @@
 .fairy-tale {
     &__title span {
         margin-left: 185px;
+        @media (max-width: 600px) {
+            margin-left: 110px;
+        }
+        @media (max-width: 370px) {
+            margin-left: 90px;
+        }
     }
     &__slider {
         width: 50%;
+        @media (max-width: 960px) {
+            width: 100%;
+        }
         .slick-btn {
             position: absolute;
             top: 50%;
@@ -21,6 +30,13 @@
             right: 0;
         }
     }
+    &__item img {
+        @media (max-width: 600px) {
+            height: 50vh;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
     &__inner {
         position: relative;
     }
@@ -33,6 +49,9 @@
         left: 0;
         right: 0;
         bottom: 0;
+        @media (max-width: 960px) {
+            position: static;
+        }
     }
     &__body {
         width: 50%;
@@ -42,6 +61,10 @@
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+        @media (max-width: 960px) {
+            width: 100%;
+            padding-left: 0;
+        }
     }
     &__text {
         font-weight: 300;
@@ -52,5 +75,8 @@
     }
     &__body-title {
         font-family: 'RobotoCondensed-Regular';
+        @media (max-width: 960px) {
+            padding-bottom: 10px;
+        }
     }
 }
