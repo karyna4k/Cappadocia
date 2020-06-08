@@ -1,10 +1,19 @@
 .our-trip {
     &__title span {
         margin-left: 245px;
+        @media (max-width: 600px) {
+            margin-left: 150px;
+        }
+        @media (max-width: 370px) {
+            margin-left: 125px;
+        }
     }
     &__slider {
         width: 50%;
         margin-left: auto;
+        @media (max-width: 990px) {
+            width: 100%;
+        }
         .slick-btn {
             position: absolute;
             top: 50%;
@@ -22,12 +31,24 @@
             right: 0;
         }
     }
+    &__item img {
+        width: 100%;
+        @media (max-width: 600px) {
+            height: 50vh;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
     &__inner {
         position: relative;
     }
     &__content {
         width: 50%;
         padding-right: 55px;
+        @media (max-width: 990px) {
+            width: 100%;
+            padding-right: 0;
+        }
     }
     &__container {
         max-width: 1230px;
@@ -38,6 +59,9 @@
         left: 0;
         right: 0;
         bottom: 0;
+        @media (max-width: 990px) {
+            position: static;
+        }
     }
     &__body {
         display: flex;
@@ -45,11 +69,23 @@
         justify-content: space-between;
         align-items: start;
         height: 100%;
+        @media (max-width: 990px) {
+            width: 100%;
+            margin: 0 0 25px 0;
+        }
     }
     &__list {
         margin: 5px 0;
         font-size: 24px;
         line-height: 28px;
+        @media (max-width: 990px) {
+            &:nth-child(5) {
+                margin-bottom: 20px;
+            }
+        }
+        @media (max-width: 370px) {
+            font-size: 20px;
+        }
         li {
             &:first-child {
                 margin-bottom: 20px;
@@ -63,5 +99,8 @@
         font-family: 'Roboto Condensed-Light';
         padding: 11px 53px;
         border: 1px solid #E2AB3F;
+        @media (max-width: 370px) {
+            padding: 11px 43px;
+        }
     }
 }
