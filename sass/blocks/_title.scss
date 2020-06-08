@@ -1,16 +1,27 @@
 .title {
+    margin-bottom: 100px;
     font-size: 96px;
     line-height: 128px;
     color: #E2AB3F;
     font-family: 'Balqis';
     font-weight: 300;
-    margin-bottom: 100px;
     span {
         display: block;
+        margin-top: -30px;
         font-size: 24px;
         line-height: 28px;
         color: #000000;
         font-family: 'RobotoCondensed-LightItalic';
-        margin-top: -30px;
+        @media (max-width: 370px) {
+            font-size: 20px;
+        }
+    }
+    @media (max-width: 600px) {
+        margin-bottom: 25px;
+        font-size: 60px;
+        line-height: 110px;
+    }
+    @media (max-width: 370px) {
+        font-size: 50px;
     }
 }
