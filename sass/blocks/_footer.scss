@@ -18,7 +18,9 @@
     &__contacts {
         width: 356px;
         height: 527px;
-        background: url('../images/footer-contacts-bg.png')cover no-repeat;
+        background-image: url('../images/footer-contacts-bg.png');
+        background-size: cover;
+        background-repeat: no-repeat;
         text-align: center;
     }
     &__contacts-title {
