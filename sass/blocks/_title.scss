@@ -5,6 +5,14 @@
     color: #E2AB3F;
     font-family: 'Balqis';
     font-weight: 300;
+    @media (max-width: 600px) {
+        margin-bottom: 25px;
+        font-size: 60px;
+        line-height: 110px;
+    }
+    @media (max-width: 370px) {
+        font-size: 50px;
+    }
     span {
         display: block;
         margin-top: -30px;
@@ -16,13 +24,5 @@
             margin-top: -40px;
             font-size: 20px;
         }
-    }
-    @media (max-width: 600px) {
-        margin-bottom: 25px;
-        font-size: 60px;
-        line-height: 110px;
-    }
-    @media (max-width: 370px) {
-        font-size: 50px;
     }
 }
