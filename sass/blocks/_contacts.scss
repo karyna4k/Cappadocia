@@ -2,12 +2,20 @@
     &__inner {
         display: flex;
         justify-content: space-between;
+        @media (max-width: 990px) {
+            flex-wrap: wrap;
+        }
     }
     &__content {
         text-align: center;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+        margin-right: 15px;
+        @media (max-width: 990px) {
+            width: 100%;
+            margin-bottom: 15px;
+        }
     }
     &__date,
     &__price {
@@ -15,6 +23,14 @@
         font-size: 96px;
         line-height: 100px;
         color: #E2AB3F;
+        @media (max-width: 600px) {
+            margin-bottom: 25px;
+            font-size: 60px;
+            line-height: 110px;
+        }
+        @media (max-width: 370px) {
+            font-size: 50px;
+        }
         span {
             display: block;
             margin-top: -10px;
@@ -23,10 +39,32 @@
             font-size: 24px;
             line-height: 28px;
             color: #000000;
+            @media (max-width: 600px) {
+                margin-top: -32px;
+                margin-left: 175px;
+                font-size: 20px;
+            }
+            @media (max-width: 370px) {
+                margin-left: 160px;
+            }
+            @media (max-width: 320px) {
+                margin-left: 115px;
+            }
         }
     }
     &__price {
         margin-left: 120px;
+        span {
+            @media (max-width: 600px) {
+                margin-left: 140px;
+            }
+            @media (max-width: 370px) {
+                margin-left: 130px;
+            }
+            @media (max-width: 320px) {
+                margin-left: 85px;
+            }
+        }
     }
     &__date {
         margin-bottom: 20px;
@@ -65,5 +103,15 @@
         text-transform: uppercase;
         padding: 11px 45px;
         cursor: pointer;
+    }
+    &__img {
+        @media (max-width: 990px) {
+            width: 100%;
+        }
+        @media (max-width: 600px) {
+            height: 50vh;
+            width: 100%;
+            object-fit: cover;
+        }
     }
 }
